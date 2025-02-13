@@ -1,5 +1,5 @@
 import React from "react";
-import man1 from "../../dist/assets/man1.svg";
+import man1 from "../assets/man1.svg";
 
 const services = [
   {
