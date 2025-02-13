@@ -14,9 +14,9 @@ const Section3 = () => {
             <div className="bg-white text-gray-800 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105">
               <h3 className="text-2xl font-semibold mb-2">Living Benefits</h3>
               <p className="text-sm mb-4">
-                Craft stunning visuals that captivate and leave lasting
-                impressions. From digital art to graphic design, let your
-                imagination run wild.
+                Life insurance not only provides a death benefit for your loved
+                ones but can also offer living benefits, such as access to funds
+                in the case of critical, chronic, or terminal illnesses.
               </p>
               <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
                 Learn More
@@ -26,8 +26,10 @@ const Section3 = () => {
             <div className="bg-white text-gray-800 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105">
               <h3 className="text-2xl font-semibold mb-2">IUL</h3>
               <p className="text-sm mb-4">
-                Build compelling narratives and strategies that drive engagement
-                and growth across platforms. Reach your audience with purpose.
+                An IUL policy combines life insurance protection with living
+                benefits, allowing you to access accumulated cash value for
+                retirement, emergencies, or medical needs while enjoying
+                tax-deferred growth.
               </p>
               <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded">
                 Learn More
@@ -39,8 +41,10 @@ const Section3 = () => {
                 Million Dollar Baby Accounts
               </h3>
               <p className="text-sm mb-4">
-                Turn innovative ideas into reality. Solve complex problems
-                creatively with cutting-edge technology and design thinking.
+                A Million Dollar Baby account, structured using a life insurance
+                policy, offers living benefits that provide access to cash value
+                over time, helping fund education, a first home, or major life
+                events with tax advantages.
               </p>
               <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded">
                 Learn More

@@ -9,20 +9,6 @@ const Section4 = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side: SVG Illustration */}
           <div className="flex justify-center md:justify-start">
-            {/* <svg
-              className="w-80 h-80"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 2C7.029 2 3 6.029 3 11s4.029 9 9 9 9-4.029 9-9-4.029-9-9-9zM8.5 11l3 3 4.5-4.5"
-              />
-            </svg> */}
             <img className="mx-auto h-74" src={greenMan} alt="" />
           </div>
 

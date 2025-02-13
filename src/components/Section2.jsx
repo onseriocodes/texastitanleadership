@@ -65,21 +65,22 @@ const Section2 = () => {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
                 <p>
-                  On the subject of insurance, I'd like to emphasize on its
-                  parallelism to all other notions of barter and trade. In this
-                  we look from the perspective of <i>options</i> and the weight
-                  that choice brings both to the consumer and even more to the
-                  producer.
-                  {/* We can see compention emerge on the field and if on
-                  "equal" grounds then this compention ought to yield profit for
-                  the producer and a naturural ever growing quality of goods for
-                  the consumer. */}
+                  Insurance is more than protection—it's a plan for securing
+                  your future while living life with peace of mind. Life
+                  insurance safeguards your loved ones with a death benefit
+                  while offering living benefits to help with emergencies or
+                  medical needs. Indexed Universal Life (IUL) policies go
+                  further by building cash value linked to market performance,
+                  giving you financial flexibility and long-term growth
+                  potential. For families thinking ahead, Million Dollar Baby
+                  accounts help create generational wealth by leveraging life
+                  insurance policies with living benefits, offering
+                  tax-advantaged savings to support milestones like education or
+                  a first home. With these options, you can ensure a financially
+                  secure future for yourself and your loved ones.
                 </p>
                 <span className="w-8 h-[2px] bg-red-500"></span>{" "}
-                {/* Red dash */}
-                <span className="text-gray-500 text-sm font-medium">
-                  Onserio
-                </span>
+                {/* Red dash
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                   <li className="flex gap-x-3">
                     <svg
@@ -149,7 +150,7 @@ const Section2 = () => {
                       rhoncus. Et magna sit morbi lobortis.
                     </span>
                   </li>
-                </ul>
+                </ul> */}
                 {/* <p className="mt-8">
                   Et vitae blandit facilisi magna lacus commodo. Vitae sapien
                   duis odio id et. Id blandit molestie auctor fermentum

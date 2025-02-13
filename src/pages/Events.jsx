@@ -1,5 +1,4 @@
 import React from "react";
-import coin from "../assets/coin.png";
 
 // EVENTS
 const Events = () => {

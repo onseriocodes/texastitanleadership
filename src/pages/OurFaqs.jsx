@@ -7,27 +7,58 @@ const OurFaqs = () => {
     {
       question: "What services does Texas Titan Leadership Development offer?",
       answer:
-        "Life insurance is a contract with an insurance company that provides financial protection for your loved ones in case of your passing. It ensures they are financially secure and can cover expenses such as mortgages, education, and daily living costs.",
+        "We provide financial solutions including retirement planning, life insurance, college savings plans, wealth optimization, and asset protection.",
     },
     {
       question: "Who can benefit from your services?",
       answer:
-        "Living benefits allow policyholders to access a portion of their life insurance benefits while they are still alive, typically in the case of serious illness or injury. These benefits help cover medical expenses or lost income.",
+        "Anyone looking to secure their financial future, whether it’s families, individuals, retirees, or entrepreneurs.",
     },
     {
       question: " How do I schedule a consultation?",
       answer:
-        "A 401k plan is a retirement savings plan offered by employers. Employees can contribute a portion of their salary to the plan, and in many cases, employers match contributions up to a certain percentage. The contributions grow tax-deferred until withdrawal during retirement.",
+        "Click the “Schedule a Free Consultation” button on our website or contact us via phone or email",
     },
     {
-      question: "How do I know which policy is right for me?",
+      question: "What is the best way to plan for retirement?",
       answer:
-        "Choosing the right policy depends on your individual needs, financial goals, and family situation. We recommend speaking to one of our insurance advisors who can provide personalized guidance tailored to your requirements.",
+        "We offer customized strategies to help you retire comfortably, ensuring your savings last and remain protected from market loss",
     },
     {
-      question: "Can I change my policy later if my needs change?",
+      question: "How can I optimize my assets?",
       answer:
-        "Yes, most insurance policies offer flexibility to adjust coverage as your life circumstances change. It's important to review your policy regularly and update it when major life events occur.",
+        "We help clients create financial strategies that protect their wealth from market downturns and unnecessary taxation.",
+    },
+    {
+      question: "What does ‘protection from market loss’ mean?",
+      answer:
+        "We use financial vehicles that ensure your investments are shielded from major stock market fluctuations.",
+    },
+    {
+      question: "How does life insurance help build generational wealth?",
+      answer:
+        "Life insurance provides a tax-free payout to your beneficiaries, ensuring financial security and creating a financial legacy.",
+    },
+    {
+      question: "What’s the best way to save for my child’s education?",
+      answer:
+        "We offer customized college savings plans that allow your money to grow tax-free while protecting your investment.",
+    },
+    {
+      question:
+        "Do I need prior experience in finance to become a Texas Titan agent?",
+      answer:
+        "No experience is necessary! We provide training, mentorship, and all the resources needed to succeed.",
+    },
+    {
+      question: "What is the income potential as an agent?",
+      answer:
+        "There’s no cap on earnings. Your income is based on your effort, team growth, and sales performance.",
+    },
+    {
+      question: "How do I get started?",
+      answer:
+        "Visit our “Agent Opportunities” page and fill out the application form to get connected with a mentor.",
     },
   ];
 
