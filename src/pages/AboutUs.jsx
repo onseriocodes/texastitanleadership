@@ -1,5 +1,5 @@
 import React from "react";
-import us2 from "../../dist/assets/us2.jpg";
+import us2 from "../assets/us2.jpg";
 
 const AboutUs = () => {
   return (
