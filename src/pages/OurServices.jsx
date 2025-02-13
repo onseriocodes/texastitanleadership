@@ -37,7 +37,7 @@ const ServiceCard = ({ icon, title, description }) => (
 const OurServices = () => {
   return (
     <>
-      <section className="myHero py-16 px-8">
+      <section className="myHero py-16 px-8 pt-25">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Side: Text Content */}
           <div>

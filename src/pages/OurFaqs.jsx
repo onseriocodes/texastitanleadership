@@ -67,7 +67,7 @@ const OurFaqs = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16 px-8">
+    <section className="bg-gray-100 py-16 px-8 pt-25">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-800 mb-8 text-center">
           Frequently Asked Questions
