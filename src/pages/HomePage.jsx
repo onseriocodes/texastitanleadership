@@ -10,7 +10,10 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <>
-      <Hero />
+      <div className="pt-15">
+        <Hero />
+      </div>
+
       <Section1 />
       <Section2 />
       <Section3 />

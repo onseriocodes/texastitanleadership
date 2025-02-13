@@ -153,8 +153,8 @@ const Navbar = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <NavLink to="/" className="nav-font text-2xl font-bold text-lime-100">
+      <div className="container mx-auto px-4 py-6 flex justify-between items-center ">
+        <NavLink to="/" className="nav-font text-2xl font-bold text-lime-100 ">
           Texas Titan Leadership
         </NavLink>
         <div className="hidden md:flex space-x-6 text-xl">
