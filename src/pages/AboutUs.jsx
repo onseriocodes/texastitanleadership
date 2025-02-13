@@ -69,8 +69,8 @@ const AboutUs = () => {
               multiply their income and turn their yearly earnings into their
               monthly earnings. If you’re looking for financial security or a
               business opportunity with no income cap, join us. Together, we
-              build. Together, we grow. Together, we win.Welcome to Texas Titan
-              Leadership Development.
+              build. Together, we grow. Together, we win. Welcome to Texas Titan
+              Leadership Development!
             </p>
           </div>
         </section>

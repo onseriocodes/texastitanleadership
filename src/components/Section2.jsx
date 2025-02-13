@@ -66,10 +66,10 @@ const Section2 = () => {
               <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
                 <p>
                   Insurance is more than protection—it's a plan for securing
-                  your future while living life with peace of mind.{" "}
-                  <b>Life insurance</b> safeguards your loved ones with a death
-                  benefit while offering living benefits to help with
-                  emergencies or medical needs.
+                  your future while living life with peace of mind. Life
+                  insurance safeguards your loved ones with a death benefit
+                  while offering <b>Living Benefits</b> to help with emergencies
+                  or medical needs.
                 </p>
                 <br />
                 <p>
