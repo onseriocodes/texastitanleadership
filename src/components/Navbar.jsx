@@ -170,6 +170,15 @@ const Navbar = () => {
           <NavLink to="/aboutus" className="hover:text-lime-100">
             About Us
           </NavLink>
+          <NavLink to="/ourteam" className="hover:text-lime-100">
+            Our Team
+          </NavLink>
+          <NavLink to="/events" className="hover:text-lime-100">
+            Events
+          </NavLink>
+          <NavLink to="/ourfaqs" className="hover:text-lime-100">
+            FAQS
+          </NavLink>
         </div>
         <button
           onClick={toggleMobileMenu}
