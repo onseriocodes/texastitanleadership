@@ -43,7 +43,7 @@ const Section1 = () => {
                   <circle cx="1" cy="1" r="1" />
                 </svg>
                 <div className="text-gray-600">
-                  Marketing Directors of Texas Giants Financial
+                  Marketing Directors of Texas Titan Financial
                 </div>
               </div>
             </figcaption>
