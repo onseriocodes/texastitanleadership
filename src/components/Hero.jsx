@@ -35,7 +35,7 @@ const Hero = () => {
                 Get Started
               </a> */}
               <NavLink
-                to="contactus"
+                to="http://calendly.com/texastitans"
                 className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium shadow hover:bg-blue-700"
               >
                 Get Started
@@ -47,7 +47,7 @@ const Hero = () => {
                 Learn More
               </a> */}
               <NavLink
-                to="/aboutus"
+                to="/ourservices"
                 className="text-2xl text-lg text-gray-700 border-yellow-500 px-6 py-3 border  rounded-lg   font-medium shadow hover:border-orange-400"
               >
                 Learn More
