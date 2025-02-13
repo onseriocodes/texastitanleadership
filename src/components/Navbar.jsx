@@ -251,115 +251,7 @@ import { Link } from "react-scroll";
 
 // export default Navbar;
 
-// ----TEST------
-// const Navbar = () => {
-//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-//   const toggleMobileMenu = () => {
-//     setIsMobileMenuOpen((prev) => !prev);
-//   };
-
-//   return (
-//     <nav className="sticky top-0 z-50 bg-nav text-yellow-500 shadow-md">
-//       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-//         {/* Brand/Logo */}
-//         <NavLink to="/" className="nav-font text-2xl font-bold text-lime-100">
-//           Texas Titan Leadership
-//         </NavLink>
-
-//         {/* Desktop Navigation (unchanged) */}
-//         <div className="hidden md:flex space-x-6 text-xl">
-//           <NavLink
-//             to="/"
-//             className="flex items-center space-x-2 hover:text-lime-100"
-//           >
-//             <AiOutlineHome size={24} />
-//           </NavLink>
-//           <NavLink to="/ourservices" className="hover:text-lime-100">
-//             Our Services
-//           </NavLink>
-//           <NavLink to="/aboutus" className="hover:text-lime-100">
-//             About Us
-//           </NavLink>
-//           <NavLink to="/ourteam" className="hover:text-lime-100">
-//             Our Team
-//           </NavLink>
-//           <NavLink to="/events" className="hover:text-lime-100">
-//             Events
-//           </NavLink>
-//           <NavLink to="/ourfaqs" className="hover:text-lime-100">
-//             FAQS
-//           </NavLink>
-//         </div>
-
-//         {/* Mobile Menu Button */}
-//         <button
-//           onClick={toggleMobileMenu}
-//           className="block md:hidden text-gray-300 hover:text-white text-2xl"
-//         >
-//           {isMobileMenuOpen ? "✖" : "☰"}
-//         </button>
-//       </div>
-
-//       {/* Mobile Navigation Menu (Fixed White Space Issue) */}
-//       <div
-//         className={`absolute top-full left-0 w-full bg-nav shadow-md md:hidden transition-transform duration-300 ${
-//           isMobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 hidden"
-//         }`}
-//       >
-//         <div className="flex flex-col items-center space-y-4 py-4 text-lg">
-//           <NavLink
-//             to="/"
-//             onClick={toggleMobileMenu}
-//             className="hover:text-lime-100"
-//           >
-//             <AiOutlineHome size={24} />
-//           </NavLink>
-//           <NavLink
-//             to="/ourservices"
-//             onClick={toggleMobileMenu}
-//             className="hover:text-lime-100"
-//           >
-//             Our Services
-//           </NavLink>
-//           <NavLink
-//             to="/aboutus"
-//             onClick={toggleMobileMenu}
-//             className="hover:text-lime-100"
-//           >
-//             About Us
-//           </NavLink>
-//           <NavLink
-//             to="/ourteam"
-//             onClick={toggleMobileMenu}
-//             className="hover:text-lime-100"
-//           >
-//             Our Team
-//           </NavLink>
-//           <NavLink
-//             to="/events"
-//             onClick={toggleMobileMenu}
-//             className="hover:text-lime-100"
-//           >
-//             Events
-//           </NavLink>
-//           <NavLink
-//             to="/ourfaqs"
-//             onClick={toggleMobileMenu}
-//             className="hover:text-lime-100"
-//           >
-//             FAQS
-//           </NavLink>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 // TEST 2!!!!!!!!
-
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
@@ -387,7 +279,7 @@ const Navbar = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="container mx-auto px-4 py-2 flex flex-col md:flex-row justify-center md:justify-between items-center">
+      <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-center md:justify-between items-center">
         {/* Centered Logo */}
         <NavLink
           to="/"

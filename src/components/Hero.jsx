@@ -10,42 +10,28 @@ const myPic =
 const Hero = () => {
   return (
     <>
-      <div
+      {/* <div
         className="flex items-center justify-center bg-cover bg-yellow-700 bg-center"
         style={{ backgroundImage: `url(${myPic})` }}
       >
         <div className="container mx-auto px-4 py-20 text-center lg:text-left lg:flex lg:items-center">
           <div className="max-w-2xl mx-auto lg:mx-0 lg:w-1/2">
             <h1 className="text-4xl font-extrabold text-stone-950 sm:text-5xl lg:text-6xl">
-              {/* Empower Your Vision{" "} */}
               Secure Your Future{" "}
-              <span className="text-sky-600">
-                {/* On the Shoulders of Titans */} Build Your Legacy
-              </span>
+              <span className="text-sky-600">Build Your Legacy</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600">
               Financial solutions for retirement, life insurance, and
               wealth-building—tailored for you
             </p>
             <div className="mt-8 flex justify-center lg:justify-start space-x-4">
-              {/* <a
-                href="#get-started"
-                className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium shadow hover:bg-blue-700"
-              >
-                Get Started
-              </a> */}
               <NavLink
                 to="http://calendly.com/texastitans"
                 className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium shadow hover:bg-blue-700"
               >
                 Get Started
               </NavLink>
-              {/* <a
-                href="#learn-more"
-                className="px-6 py-3 border  rounded-lg   font-medium shadow hover:border-gray-500"
-              >
-                Learn More
-              </a> */}
+
               <NavLink
                 to="/ourservices"
                 className="text-2xl text-lg text-gray-700 border-yellow-500 px-6 py-3 border  rounded-lg   font-medium shadow hover:border-orange-400"
@@ -54,13 +40,40 @@ const Hero = () => {
               </NavLink>
             </div>
           </div>
-          {/* <div className="mt-10 lg:mt-0 lg:ml-16 lg:w-1/2">
-            <img
-              src="https://via.placeholder.com/600x400"
-              alt="Hero Image"
-              className="rounded-lg shadow-lg"
-            />
-          </div> */}
+        </div>
+      </div> */}
+      <div
+        className="relative flex items-center justify-center bg-cover bg-yellow-700 bg-center"
+        style={{ backgroundImage: `url(${myPic})` }}
+      >
+        {/* Background Overlay (Only for Mobile) */}
+        <div className="absolute inset-0 bg-black/40 sm:bg-transparent"></div>
+
+        <div className="relative container mx-auto px-4 py-20 text-center lg:text-left lg:flex lg:items-center">
+          <div className="max-w-2xl mx-auto lg:mx-0 lg:w-1/2">
+            <h1 className="text-4xl font-extrabold text-gray-800 sm:text-gray-800 sm:text-5xl lg:text-6xl">
+              Secure Your Future{" "}
+              <span className="text-sky-600">Build Your Legacy</span>
+            </h1>
+            <p className="mt-6 text-lg text-lime-100 sm:text-gray-600">
+              Financial solutions for retirement, life insurance, and
+              wealth-building—tailored for you
+            </p>
+            <div className="mt-8 flex justify-center lg:justify-start space-x-4">
+              <NavLink
+                to="http://calendly.com/texastitans"
+                className="px-6 py-3 bg-sky-600 text-white rounded-lg text-lg font-medium shadow hover:bg-blue-700"
+              >
+                Get Started
+              </NavLink>
+              <NavLink
+                to="/ourservices"
+                className="text-lg text-lime-100 sm:text-gray-600 border-yellow-500 px-6 py-3 border rounded-lg font-medium shadow hover:border-orange-400"
+              >
+                Learn More
+              </NavLink>
+            </div>
+          </div>
         </div>
       </div>
     </>
