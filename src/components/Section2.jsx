@@ -66,13 +66,21 @@ const Section2 = () => {
               <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
                 <p>
                   Insurance is more than protection—it's a plan for securing
-                  your future while living life with peace of mind. Life
-                  insurance safeguards your loved ones with a death benefit
-                  while offering living benefits to help with emergencies or
-                  medical needs. Indexed Universal Life (IUL) policies go
-                  further by building cash value linked to market performance,
-                  giving you financial flexibility and long-term growth
-                  potential. For families thinking ahead, Million Dollar Baby
+                  your future while living life with peace of mind.{" "}
+                  <b>Life insurance</b> safeguards your loved ones with a death
+                  benefit while offering living benefits to help with
+                  emergencies or medical needs.
+                </p>
+                <br />
+                <p>
+                  {" "}
+                  <b>Indexed Universal Life (IUL)</b> policies go further by
+                  building cash value linked to market performance, giving you
+                  financial flexibility and long-term growth potential.{" "}
+                </p>
+                <br />
+                <p>
+                  For families thinking ahead, <b>Million Dollar Baby</b>{" "}
                   accounts help create generational wealth by leveraging life
                   insurance policies with living benefits, offering
                   tax-advantaged savings to support milestones like education or
