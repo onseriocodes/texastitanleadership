@@ -1,6 +1,7 @@
 import React from "react";
 import greenMan from "../assets/greenMan.svg";
 import woman from "../assets/woman.jpg";
+import Calend from "./Calend";
 
 const Section4 = () => {
   return (
@@ -28,6 +29,8 @@ const Section4 = () => {
               health expenses, we’re here to help you every step of the way.
             </p>
           </div>
+
+          <Calend />
         </div>
       </section>
     </>
