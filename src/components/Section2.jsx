@@ -167,15 +167,16 @@ const Section2 = () => {
                   convallis ac tempor et ut. Ac lorem vel integer orci.
                 </p> */}
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  No server? No problem.
+                  Todays Strategies for Tomorrows Futures
                 </h2>
                 <p className="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
+                  Step into a career where you can build wealth while helping
+                  others secure their financial future. Life insurance with
+                  Living Benefits provides essential protection, while Indexed
+                  Universal Life (IUL) policies create cash value and long-term
+                  flexibility. Million Dollar Baby accounts help families
+                  establish generational wealth. As an agent, you’ll have the
+                  opportunity to earn, grow, and make a lasting impact.
                 </p>
               </div>
             </div>
