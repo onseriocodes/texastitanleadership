@@ -53,8 +53,9 @@ const Hero = () => {
         <div className="relative container mx-auto px-4 py-33 text-center lg:text-left lg:flex lg:items-center">
           <div className="max-w-2xl mx-auto lg:mx-0 lg:w-1/2">
             <h1 className="text-4xl font-extrabold text-gray-800 sm:text-gray-800 sm:text-5xl lg:text-6xl">
-              Secure Your Future{" "}
-              <span className="text-sky-600">Build Your Legacy</span>
+              {/* Secure Your Future{" "} */}
+              Empower Your Vision{" "}
+              <span className="text-sky-600">On The Shoulders of Titans</span>
             </h1>
             <p className="mt-6 text-lg text-lime-100 sm:text-gray-600">
               Financial solutions for retirement, life insurance, and
