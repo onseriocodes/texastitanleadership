@@ -207,7 +207,7 @@ const OurTeam = () => {
                   />
                   <div>
                     <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
-                      Antoine Foy
+                      Suzanne Bouyam
                     </h3>
                     <p className="text-sm/6 font-semibold text-sky-600">
                       Associate
