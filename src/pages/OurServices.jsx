@@ -42,7 +42,7 @@ const OurServices = () => {
           {/* Left Side: Text Content */}
           <div>
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              Our Services at Texas Titan Leadership Development
+              Our Services
             </h1>
             <p className="text-xl text-gray-700 mb-6">
               At Texas Titan Leadership Development, we provide tailored
