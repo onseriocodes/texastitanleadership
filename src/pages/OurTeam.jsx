@@ -7,6 +7,7 @@ import LilianyPeter from "../assets/LilianyPeter.jpg";
 import SamuelAsiedu from "../assets/SamuelAsiedu.jpg";
 import AntoineFoy from "../assets/AntoineFoy.jpg";
 import FeliciaIge from "../assets/FeliciaIge.jpg";
+import Suzanne from "../assets/Suzanne.jpg";
 import AbeiyuwaPhyllips from "../assets/AbeiyuwaPhyllips.jpg";
 import plan from "../assets/plan.svg";
 import plan2 from "../assets/plan2.svg";
@@ -184,6 +185,24 @@ const OurTeam = () => {
                   <img
                     className="w-80 h-80 size-60 rounded-full"
                     src={AntoineFoy}
+                    alt=""
+                  />
+                  <div>
+                    <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
+                      Antoine Foy
+                    </h3>
+                    <p className="text-sm/6 font-semibold text-sky-600">
+                      Associate
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="flex items-center gap-x-6">
+                  <img
+                    className="w-80 h-80 size-60 rounded-full"
+                    src={Suzanne}
                     alt=""
                   />
                   <div>
