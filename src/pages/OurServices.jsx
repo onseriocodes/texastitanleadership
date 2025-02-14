@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import man1 from "../assets/man1.svg";
 
 const services = [
@@ -35,6 +36,11 @@ const ServiceCard = ({ icon, title, description }) => (
 );
 
 const OurServices = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, [pathname]);
   return (
     <>
       <section className="myHero py-16 px-8 pt-25">

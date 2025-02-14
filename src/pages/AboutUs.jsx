@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import us2 from "../assets/us2.jpg";
 
 const AboutUs = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, [pathname]);
   return (
     <>
       <section className="myHero py-16 px-8 pt-20">

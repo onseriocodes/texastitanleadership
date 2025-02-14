@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 // EVENTS
 const Events = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, [pathname]);
   return (
     <>
       <section className="bg-gray-50 py-16 px-8 flex flex-col items-center justify-center min-h-screen text-center">

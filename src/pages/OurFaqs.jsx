@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const OurFaqs = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -66,6 +67,12 @@ const OurFaqs = () => {
     setOpenQuestion(openQuestion === index ? null : index);
   };
 
+  // To top upon landing
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, [pathname]);
   return (
     <section className="bg-gray-100 py-16 px-8 pt-25">
       <div className="max-w-4xl mx-auto">
