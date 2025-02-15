@@ -144,7 +144,7 @@ const OurServices = () => {
             <br />
 
             <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-              💡 What Can You Use an IUL For?
+              What Can You Use an IUL For?
             </h2>
 
             <ul className="space-y-3">
@@ -177,7 +177,7 @@ const OurServices = () => {
         <section className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              👶 The Million Dollar Baby Account – Securing Your Child’s Future
+              The Million Dollar Baby Account – Securing Your Child’s Future
             </h1>
             <p className="text-xl text-gray-700 mb-6">
               The Million Dollar Baby Account is an{" "}
@@ -217,7 +217,7 @@ const OurServices = () => {
         <section className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              📞 Don’t Miss Out – See If You Qualify!
+              Don’t Miss Out – See If You Qualify!
             </h1>
             <p className="text-xl text-gray-700 mb-6">
               At <b>Texas Titan Leadership Development</b>, we help individuals
