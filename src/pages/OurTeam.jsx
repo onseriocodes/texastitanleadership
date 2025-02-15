@@ -29,7 +29,7 @@ const OurTeam = () => {
           {/* Left Side: Text Content */}
           <div>
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              A Titan introduction
+              A Titan Introduction
             </h1>
             <p className="text-xl text-gray-700 mb-6">
               Join our team with a large combination years of experience in
