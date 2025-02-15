@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import man1 from "../assets/man1.svg";
-import Calend from "./Calend";
+import Calend from "../components/Calend";
 
 const services = [
   {
