@@ -130,7 +130,7 @@ const OurServices = () => {
         <section id="iul" className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
-              The Power of IUL (Indexed Universal Life)
+              Indexed Universal Life
             </h1>
             <p className="text-xl text-gray-700 mb-6">
               The IUL (Indexed Universal Life) is a{" "}
@@ -161,12 +161,12 @@ const OurServices = () => {
             </h2>
 
             <ul className="space-y-3">
-              <li>💍 A wedding fund</li>
-              <li>🏡 A down payment on a home</li>
-              <li>🚗 Buying a car</li>
-              <li>🚀 Starting a business</li>
+              <li>A wedding fund</li>
+              <li>A down payment on a home</li>
+              <li> Buying a car</li>
+              <li> Starting a business</li>
               <li>
-                🏖 <b>Supplementing your retirement</b> (Enjoy tax-free income in
+                <b>Supplementing your retirement</b> (Enjoy tax-free income in
                 retirement!)
               </li>
             </ul>
@@ -227,6 +227,18 @@ const OurServices = () => {
             </p>
           </div>
         </section>
+
+        {/* <section className="bg-gray-00 py-16 px-8">
+          <div className="max-w-4xl mx-auto">
+            <h1>test</h1>
+          </div>
+        </section>
+
+        <section className="bg-gray-300 py-16 px-8">
+          <div className="max-w-4xl mx-auto">
+            <h1>test</h1>
+          </div>
+        </section> */}
         <section className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
@@ -260,18 +272,6 @@ const OurServices = () => {
             </p>
           </div>
         </section>
-
-        {/* <section className="bg-gray-00 py-16 px-8">
-          <div className="max-w-4xl mx-auto">
-            <h1>test</h1>
-          </div>
-        </section>
-
-        <section className="bg-gray-300 py-16 px-8">
-          <div className="max-w-4xl mx-auto">
-            <h1>test</h1>
-          </div>
-        </section> */}
       </section>
     </>
   );
