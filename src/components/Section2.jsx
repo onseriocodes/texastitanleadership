@@ -186,7 +186,7 @@ const Section2 = () => {
                   convallis ac tempor et ut. Ac lorem vel integer orci.
                 </p> */}
                 <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  Todays Strategies for Tomorrow's Futures
+                  Today's Strategies for Tomorrow's Futures
                 </h2>
                 <p className="mt-6">
                   Step into a career where you can build wealth while helping
