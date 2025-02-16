@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Section3 = () => {
   return (
@@ -18,9 +19,12 @@ const Section3 = () => {
                 ones but can also offer living benefits, such as access to funds
                 in the case of critical, chronic, or terminal illnesses.
               </p>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+              <NavLink
+                to="/ourservices#lb"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded"
+              >
                 Learn More
-              </button>
+              </NavLink>
             </div>
 
             <div className="bg-white text-gray-800 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105">
@@ -31,9 +35,12 @@ const Section3 = () => {
                 retirement, emergencies, or medical needs while enjoying
                 tax-deferred growth.
               </p>
-              <button className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded">
+              <NavLink
+                to="/ourservices#iul"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded"
+              >
                 Learn More
-              </button>
+              </NavLink>{" "}
             </div>
 
             <div className="bg-white text-gray-800 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105">
@@ -46,9 +53,12 @@ const Section3 = () => {
                 over time, helping fund education, a first home, or major life
                 events with tax advantages.
               </p>
-              <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded">
+              <NavLink
+                to="/ourservices#mdb"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded"
+              >
                 Learn More
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>
