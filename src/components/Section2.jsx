@@ -71,7 +71,7 @@ const Section2 = () => {
                   insurance safeguards your loved ones with a death benefit
                   while offering{" "}
                   <NavLink to="/ourservices#lb">
-                    <p class="inline underline decoration-pink-500">
+                    <p class="inline underline decoration-pink-600">
                       {" "}
                       Living Benefits
                     </p>
@@ -81,7 +81,7 @@ const Section2 = () => {
                 <br />
                 <p>
                   <NavLink to="/ourservices#iul">
-                    <p class="inline underline decoration-pink-500">
+                    <p class="inline underline decoration-pink-600">
                       {" "}
                       Indexed Universal Life (IUL)
                     </p>
@@ -94,7 +94,7 @@ const Section2 = () => {
                 <p>
                   For families thinking ahead,{" "}
                   <NavLink to="/ourservices#mdb">
-                    <p class="inline underline decoration-pink-500">
+                    <p class="inline underline decoration-pink-600">
                       {" "}
                       Million Dollar Baby
                     </p>
