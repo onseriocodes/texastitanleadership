@@ -261,7 +261,7 @@ const OurServices = () => {
           </div>
         </section>
 
-        <section className="bg-gray-00 py-16 px-8">
+        {/* <section className="bg-gray-00 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1>test</h1>
           </div>
@@ -271,7 +271,7 @@ const OurServices = () => {
           <div className="max-w-4xl mx-auto">
             <h1>test</h1>
           </div>
-        </section>
+        </section> */}
       </section>
     </>
   );
