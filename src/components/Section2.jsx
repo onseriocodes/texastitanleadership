@@ -47,7 +47,8 @@ const Section2 = () => {
                   A better tomorrow
                 </h1>
                 <p className="mt-6 text-xl/8 text-gray-700">
-                  Confronting the economics of reality and what this looks like
+                  Helping individuals & families understand their options
+                  {/* Confronting the economics of reality and what this looks like */}
                 </p>
               </div>
             </div>
