@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Section2 = () => {
   return (
@@ -68,19 +69,36 @@ const Section2 = () => {
                   Insurance is more than protection—it's a plan for securing
                   your future while living life with peace of mind. Life
                   insurance safeguards your loved ones with a death benefit
-                  while offering <b>Living Benefits</b> to help with emergencies
-                  or medical needs.
+                  while offering{" "}
+                  <NavLink to="/ourservices#lb">
+                    <p class="inline underline decoration-pink-500">
+                      {" "}
+                      Living Benefits
+                    </p>
+                  </NavLink>{" "}
+                  to help with emergencies or medical needs.
                 </p>
                 <br />
                 <p>
-                  {" "}
-                  <b>Indexed Universal Life (IUL)</b> policies go further by
-                  building cash value linked to market performance, giving you
-                  financial flexibility and long-term growth potential.{" "}
+                  <NavLink to="/ourservices#iul">
+                    <p class="inline underline decoration-pink-500">
+                      {" "}
+                      Indexed Universal Life (IUL)
+                    </p>
+                  </NavLink>{" "}
+                  policies go further by building cash value linked to market
+                  performance, giving you financial flexibility and long-term
+                  growth potential.{" "}
                 </p>
                 <br />
                 <p>
-                  For families thinking ahead, <b>Million Dollar Baby</b>{" "}
+                  For families thinking ahead,{" "}
+                  <NavLink to="/ourservices#mdb">
+                    <p class="inline underline decoration-pink-500">
+                      {" "}
+                      Million Dollar Baby
+                    </p>
+                  </NavLink>{" "}
                   accounts help create generational wealth by leveraging life
                   insurance policies with living benefits, offering
                   tax-advantaged savings to support milestones like education or

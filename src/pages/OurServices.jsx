@@ -42,6 +42,18 @@ const OurServices = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page
   }, [pathname]);
+
+  // test
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <>
       <section className="myHero py-16 px-8 pt-25">
@@ -74,7 +86,7 @@ const OurServices = () => {
           </div>
         </div>
 
-        <section className="bg-gray-50 py-16 px-8">
+        <section id="services" className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               Living Benefits
@@ -115,7 +127,7 @@ const OurServices = () => {
         </section>
 
         {/* IUL */}
-        <section className="bg-gray-50 py-16 px-8">
+        <section id="iul" className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               The Power of IUL (Indexed Universal Life)
@@ -175,7 +187,7 @@ const OurServices = () => {
           </div>
         </section>
 
-        <section className="bg-gray-50 py-16 px-8">
+        <section id="mdb" className="bg-gray-50 py-16 px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               The Million Dollar Baby Account – Securing Your Child’s Future
@@ -249,12 +261,17 @@ const OurServices = () => {
           </div>
         </section>
 
-        {/* <section className="bg-gray-50 py-16 px-8">
-        <div className="max-w-4xl mx-auto">
-          
-        </div>
-        </section> */}
-        <Calend />
+        <section className="bg-gray-00 py-16 px-8">
+          <div className="max-w-4xl mx-auto">
+            <h1>test</h1>
+          </div>
+        </section>
+
+        <section className="bg-gray-300 py-16 px-8">
+          <div className="max-w-4xl mx-auto">
+            <h1>test</h1>
+          </div>
+        </section>
       </section>
     </>
   );
