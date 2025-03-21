@@ -8,7 +8,8 @@ const EventsPage = () => {
     title: "Community Pop Up Shop!",
     date: "2025-03-29T00:00:00",
     location: "Addison, TX",
-    description: "Join us for our networking & games night",
+    description: "Join us for our networking & games night!",
+    address: "14655 Midway Rd, Suite A Addison, TX 75001",
     image: ttl,
   };
 
@@ -71,8 +72,8 @@ const EventsPage = () => {
             {upcomingEvent.location} -{" "}
             {new Date(upcomingEvent.date).toDateString()}
           </p>
+          <p className="mt-2 text-sm">{upcomingEvent.address}</p>
           <p className="mt-2 text-sm">{upcomingEvent.description}</p>
-
           {timeLeft ? (
             <div className="mt-4 text-3xl font-semibold">
               {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
