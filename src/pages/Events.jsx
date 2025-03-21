@@ -3,6 +3,10 @@ import { NavLink } from "react-router-dom";
 import ttl from "../assets/ttl.png";
 
 const EventsPage = () => {
+  // Addy
+  const addy =
+    "https://www.google.com/maps/@32.9465015,-96.839227,3a,75y,258.03h,90t/data=!3m7!1e1!3m5!1s0mf5OYZg3sNm4VMgOtZgjA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D0mf5OYZg3sNm4VMgOtZgjA%26yaw%3D258.03!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDMxOS4xIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D";
+
   // UPCOMING EVENT
   const upcomingEvent = {
     title: "Community Pop Up Shop!",
@@ -72,7 +76,10 @@ const EventsPage = () => {
             {upcomingEvent.location} -{" "}
             {new Date(upcomingEvent.date).toDateString()}
           </p>
-          <p className="mt-2 text-sm">{upcomingEvent.address}</p>
+          <NavLink to={addy}>
+            <p className="mt-2 text-sm">{upcomingEvent.address}</p>
+          </NavLink>
+
           <p className="mt-2 text-sm">{upcomingEvent.description}</p>
           {timeLeft ? (
             <div className="text-lime-100 mt-4 text-3xl font-semibold">
