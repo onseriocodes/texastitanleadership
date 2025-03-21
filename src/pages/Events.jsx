@@ -8,7 +8,7 @@ const EventsPage = () => {
     title: "Community Pop Up Shop!",
     date: "2025-03-29T00:00:00",
     location: "Addison, TX",
-    description: "Join industry leaders in AI, Web3, and Cloud Computing.",
+    description: "Join us for our networking & games night",
     image: ttl,
   };
 
