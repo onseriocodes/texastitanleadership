@@ -75,7 +75,7 @@ const EventsPage = () => {
           <p className="mt-2 text-sm">{upcomingEvent.address}</p>
           <p className="mt-2 text-sm">{upcomingEvent.description}</p>
           {timeLeft ? (
-            <div className="mt-4 text-3xl font-semibold">
+            <div className="text-lime-100 mt-4 text-3xl font-semibold">
               {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
               {timeLeft.seconds}s
             </div>
