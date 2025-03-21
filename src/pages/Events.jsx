@@ -1,32 +1,107 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import ttl from "../assets/ttl.png";
 
-// EVENTS
-const Events = () => {
-  const { pathname } = useLocation();
+const EventsPage = () => {
+  // UPCOMING EVENT
+  const upcomingEvent = {
+    title: "Community Pop Up Shop!",
+    date: "2025-03-29T00:00:00",
+    location: "Addison, TX",
+    description: "Join industry leaders in AI, Web3, and Cloud Computing.",
+    image: ttl,
+  };
+
+  // PAST EVENTS
+  const pastEvents = [
+    {
+      id: 1,
+      title: "Night of Roses",
+      date: "2025-02-17",
+      location: "The Colony, TX",
+      link: "/events/1",
+    },
+    {
+      id: 2,
+      title: "Night of Elegence",
+      date: "2024-11-23",
+      location: "The Colony, TX",
+      link: "/events/2",
+    },
+  ];
+
+  // COUNTDOWN TIMER
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  function calculateTimeLeft() {
+    const eventDate = new Date(upcomingEvent.date).getTime();
+    const now = new Date().getTime();
+    const difference = eventDate - now;
+
+    if (difference <= 0) return null; // Event started
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
+
+    return { days, hours, minutes, seconds };
+  }
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
-  }, [pathname]);
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <>
-      <section className="bg-gray-50 py-16 px-8 flex flex-col items-center justify-center min-h-screen text-center">
-        <div className="max-w-3xl">
-          <h1 className="text-5xl font-bold text-gray-800 mb-4">Events</h1>
-          <p className="text-2xl text-gray-700 mb-6">
-            Stay tuned! Exciting events are on the way.
+    <div className="w-full">
+      {/* Upcoming Event Banner */}
+      <div
+        className="w-full h-[60vh] flex flex-col items-center justify-center text-white text-center p-8 relative bg-cover bg-center"
+        style={{ backgroundImage: `url(${upcomingEvent.image})` }}
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <div className="relative z-10">
+          <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
+          <p className="text-lg">
+            {upcomingEvent.location} -{" "}
+            {new Date(upcomingEvent.date).toDateString()}
           </p>
-          <p className="text-lg text-gray-600 mb-8">
-            We are working on bringing you valuable and insightful events. Check
-            back soon for updates!
-          </p>
-          <div className="    rounded-xl flex items-center justify-center text-gray-500 text-xl">
-            🚧 Coming Soon 🚧
-          </div>
+          <p className="mt-2 text-sm">{upcomingEvent.description}</p>
+
+          {timeLeft ? (
+            <div className="mt-4 text-3xl font-semibold">
+              {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
+              {timeLeft.seconds}s
+            </div>
+          ) : (
+            <div className="mt-4 text-xl font-semibold">Event is Live!</div>
+          )}
+        </div>
+      </div>
+
+      {/* Past Events List */}
+      <section className="max-w-4xl mx-auto p-6">
+        <h2 className="text-2xl text-center font-semibold mb-4">Past Events</h2>
+        <div className="grid gap-4">
+          {pastEvents.map((event) => (
+            <NavLink to={event.link} key={event.id} className="block">
+              <div className="border p-4 rounded-lg shadow-md bg-gray-100 hover:bg-gray-200 transition cursor-pointer">
+                <h3 className="text-lg font-bold">{event.title}</h3>
+                <p className="text-sm text-gray-600">
+                  {event.date} - {event.location}
+                </p>
+              </div>
+            </NavLink>
+          ))}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
-export default Events;
+export default EventsPage;
