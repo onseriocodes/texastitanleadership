@@ -11,6 +11,7 @@ const EventsPage = () => {
   const upcomingEvent = {
     title: "Community Pop Up Shop!",
     date: "2025-03-29T00:00:00",
+    times: "1-6pm",
     location: "Addison, TX",
     description: "Join us for our networking & games night!",
     address: "14655 Midway Rd, Suite A Addison, TX 75001",
@@ -23,15 +24,15 @@ const EventsPage = () => {
       id: 1,
       title: "Night of Roses",
       date: "2025-02-17",
-      location: "The Colony, TX",
-      link: "/events/1",
+      location: "Addison, TX",
+      link: "",
     },
     {
       id: 2,
       title: "Night of Elegence",
       date: "2024-11-23",
       location: "The Colony, TX",
-      link: "/events/2",
+      link: "",
     },
   ];
 
@@ -74,8 +75,10 @@ const EventsPage = () => {
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
           <p className="text-lg">
             {upcomingEvent.location} -{" "}
-            {new Date(upcomingEvent.date).toDateString()}
+            {new Date(upcomingEvent.date).toDateString()}{" "}
+            <span className="font-semibold ">{upcomingEvent.times}</span>
           </p>
+
           <NavLink to={addy}>
             <p className="mt-2 text-sm">{upcomingEvent.address}</p>
           </NavLink>
