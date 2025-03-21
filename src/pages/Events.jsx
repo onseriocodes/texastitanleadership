@@ -78,7 +78,7 @@ const EventsPage = () => {
           }}
         ></div>
 
-        <div className="relative z-10 bg-black rounded-xl p-4">
+        <div className="relative z-10 bg-gray-800 rounded-xl px-10 py-4">
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
           <p className="text-lg">
             {upcomingEvent.location} -{" "}
