@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import ttl from "../assets/ttl.png";
+import ttlImage from "../assets/ttl.png";
+import network from "../assets/network.jpg";
+import board from "../assets/board.jpg";
 
 const EventsPage = () => {
   // Addy
@@ -15,7 +17,7 @@ const EventsPage = () => {
     location: "Addison, TX",
     description: "Join us for our networking & games night!",
     address: "14655 Midway Rd, Suite A Addison, TX 75001",
-    image: ttl,
+    image: board,
   };
 
   // PAST EVENTS
@@ -64,14 +66,19 @@ const EventsPage = () => {
   return (
     <div className="w-full">
       {/* Upcoming Event Banner */}
-      <div
-        className="w-full h-[60vh] flex flex-col items-center justify-center text-white text-center p-8 relative bg-cover bg-center"
-        style={{ backgroundImage: `url(${upcomingEvent.image})` }}
-      >
+      <div className="w-full h-[60vh] flex flex-col items-center justify-center text-white text-center p-8 relative bg-cover bg-center bg-blue-500">
         {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div
+          className="absolute inset-0 bg-black bg-opacity-50"
+          style={{
+            backgroundImage: `url(${upcomingEvent.image})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        ></div>
 
-        <div className="relative z-10">
+        <div className="relative z-10 bg-black rounded-xl p-4">
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
           <p className="text-lg">
             {upcomingEvent.location} -{" "}
