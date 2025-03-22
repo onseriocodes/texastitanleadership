@@ -80,14 +80,16 @@ const EventsPage = () => {
 
         <div className="relative z-10 bg-gray-800 rounded-xl px-10 py-4">
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
-          <p className="text-lg inline underline decoration-pink-600">
+          <p className="text-lg ">
             {/* {upcomingEvent.location} -{" "} */}
             {new Date(upcomingEvent.date).toDateString()}{" "}
             <span className="font-semibold text-lg">{upcomingEvent.times}</span>
           </p>
 
           <NavLink to={addy}>
-            <p className="mt-2 text-lg">{upcomingEvent.address}</p>
+            <p className="mt-2 text-lg inline underline decoration-pink-600">
+              {upcomingEvent.address}
+            </p>
           </NavLink>
 
           <p className="mt-2 text-lg">{upcomingEvent.description}</p>
@@ -103,7 +105,7 @@ const EventsPage = () => {
       </div>
 
       {/* Past Events List */}
-      <section className="w-full mx-auto p-6">
+      <section className="mesh w-full min-h-screen mx-auto p-6">
         <h2 className="text-2xl text-center  font-semibold mb-4">
           Past Events
         </h2>
