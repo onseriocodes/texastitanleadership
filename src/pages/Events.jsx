@@ -80,7 +80,7 @@ const EventsPage = () => {
 
         <div className="relative z-10 bg-gray-800 rounded-xl px-10 py-4">
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
-          <p className="text-lg">
+          <p className="text-lg inline underline decoration-pink-600">
             {/* {upcomingEvent.location} -{" "} */}
             {new Date(upcomingEvent.date).toDateString()}{" "}
             <span className="font-semibold text-lg">{upcomingEvent.times}</span>
@@ -103,8 +103,10 @@ const EventsPage = () => {
       </div>
 
       {/* Past Events List */}
-      <section className="max-w-4xl mx-auto p-6">
-        <h2 className="text-2xl text-center font-semibold mb-4">Past Events</h2>
+      <section className="w-full mx-auto p-6">
+        <h2 className="text-2xl text-center  font-semibold mb-4">
+          Past Events
+        </h2>
         <div className="grid gap-4">
           {pastEvents.map((event) => (
             <NavLink to={event.link} key={event.id} className="block">
