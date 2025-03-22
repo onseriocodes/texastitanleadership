@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             {/* <!-- Navigation Links --> */}
             <div className="flex space-x-6">
-              <NavLink to="/careers" className="hover:text-lime-100">
+              <NavLink to="#" className="hover:text-lime-100">
                 Careers
               </NavLink>
               <NavLink

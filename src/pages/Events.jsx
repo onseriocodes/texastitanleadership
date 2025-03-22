@@ -81,16 +81,16 @@ const EventsPage = () => {
         <div className="relative z-10 bg-gray-800 rounded-xl px-10 py-4">
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
           <p className="text-lg">
-            {upcomingEvent.location} -{" "}
+            {/* {upcomingEvent.location} -{" "} */}
             {new Date(upcomingEvent.date).toDateString()}{" "}
-            <span className="font-semibold ">{upcomingEvent.times}</span>
+            <span className="font-semibold text-lg">{upcomingEvent.times}</span>
           </p>
 
           <NavLink to={addy}>
-            <p className="mt-2 text-sm">{upcomingEvent.address}</p>
+            <p className="mt-2 text-lg">{upcomingEvent.address}</p>
           </NavLink>
 
-          <p className="mt-2 text-sm">{upcomingEvent.description}</p>
+          <p className="mt-2 text-lg">{upcomingEvent.description}</p>
           {timeLeft ? (
             <div className="text-lime-100 mt-4 text-3xl font-semibold">
               {timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m{" "}
