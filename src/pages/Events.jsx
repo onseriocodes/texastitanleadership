@@ -105,7 +105,7 @@ const EventsPage = () => {
       </div>
 
       {/* Past Events List */}
-      <section className="mesh w-full h-full mx-auto p-6">
+      <section className=" w-full h-full mx-auto p-6">
         <h2 className="text-2xl text-center  font-semibold mb-4">
           Past Events
         </h2>
@@ -127,10 +127,10 @@ const EventsPage = () => {
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {event.title}
                   </h5>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  {/* <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Here are the biggest enterprise technology acquisitions of
                     2021 so far, in reverse chronological order.
-                  </p>
+                  </p> */}
                 </div>
               </a>
               {/* <div className="border p-4 rounded-lg shadow-md bg-gray-100 hover:bg-gray-200 transition cursor-pointer">
