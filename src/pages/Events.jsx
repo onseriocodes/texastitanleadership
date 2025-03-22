@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import ttlImage from "../assets/ttl.png";
 import network from "../assets/network.jpg";
 import board from "../assets/board.jpg";
+import roses from "../assets/roses.jpg";
+import dine from "../assets/dine.jpg";
 
 const EventsPage = () => {
   // Addy
@@ -27,6 +29,7 @@ const EventsPage = () => {
       title: "Night of Roses",
       date: "2025-02-17",
       location: "Addison, TX",
+      image: roses,
       link: "",
     },
     {
@@ -34,6 +37,7 @@ const EventsPage = () => {
       title: "Night of Elegence",
       date: "2024-11-23",
       location: "The Colony, TX",
+      image: dine,
       link: "",
     },
   ];
@@ -110,38 +114,38 @@ const EventsPage = () => {
           Past Events
         </h2>
 
-        <div className="grid gap-4">
+        {/* <div className="grid gap-4">
           {pastEvents.map((event) => (
             <NavLink to={event.link} key={event.id} className="block">
-              {/* CARD */}
+              
               <a
                 href="#"
                 className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 <img
                   className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                  src="/docs/images/blog/image-4.jpg"
+                  src={event.image}
                   alt=""
                 />
                 <div className="flex flex-col justify-between p-4 leading-normal">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {event.title}
                   </h5>
-                  {/* <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Here are the biggest enterprise technology acquisitions of
                     2021 so far, in reverse chronological order.
-                  </p> */}
+                  </p>
                 </div>
               </a>
-              {/* <div className="border p-4 rounded-lg shadow-md bg-gray-100 hover:bg-gray-200 transition cursor-pointer">
+              <div className="border p-4 rounded-lg shadow-md bg-gray-100 hover:bg-gray-200 transition cursor-pointer">
                 <h3 className="text-lg font-bold">{event.title}</h3>
                 <p className="text-sm text-gray-600">
                   {event.date} - {event.location}
                 </p>
-              </div> */}
+              </div>
             </NavLink>
           ))}
-        </div>
+        </div> */}
       </section>
     </div>
   );
