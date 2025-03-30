@@ -103,7 +103,9 @@ const EventsPage = () => {
               {timeLeft.seconds}s
             </div>
           ) : (
-            <div className="mt-4 text-xl font-semibold">Event is Live!</div>
+            <div className="mt-4 text-xl font-semibold">
+              Thank you for coming!
+            </div>
           )}
         </div>
       </div>
