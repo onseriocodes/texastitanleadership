@@ -5,6 +5,7 @@ import network from "../assets/network.jpg";
 import board from "../assets/board.jpg";
 import roses from "../assets/roses.jpg";
 import dine from "../assets/dine.jpg";
+import Slides from "../components/Slides";
 
 const EventsPage = () => {
   // Addy
@@ -29,7 +30,7 @@ const EventsPage = () => {
       title: "Night of Roses",
       date: "2025-02-17",
       location: "Addison, TX",
-      image: roses,
+      image: [roses, board, dine],
       link: "",
     },
     {
@@ -37,7 +38,7 @@ const EventsPage = () => {
       title: "Night of Elegence",
       date: "2024-11-23",
       location: "The Colony, TX",
-      image: dine,
+      image: [dine, board, roses],
       link: "",
     },
   ];
@@ -115,8 +116,20 @@ const EventsPage = () => {
         <h2 className="text-2xl text-center  font-semibold mb-4">
           Past Events
         </h2>
+        {pastEvents.map((event, index) => (
+          <div key={event.id} style={{ marginBottom: "40px" }}>
+            <h3>{event.title}</h3>
+            <Slides images={[event.image]} />
+          </div>
+        ))}
+      </section>
+    </div>
+  );
+};
 
-        {/* <div className="grid gap-4">
+export default EventsPage;
+{
+  /* <div className="grid gap-4">
           {pastEvents.map((event) => (
             <NavLink to={event.link} key={event.id} className="block">
               
@@ -147,10 +160,5 @@ const EventsPage = () => {
               </div>
             </NavLink>
           ))}
-        </div> */}
-      </section>
-    </div>
-  );
-};
-
-export default EventsPage;
+        </div> */
+}
