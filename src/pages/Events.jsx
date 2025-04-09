@@ -5,6 +5,8 @@ import network from "../assets/network.jpg";
 import board from "../assets/board.jpg";
 import roses from "../assets/roses.jpg";
 import dine from "../assets/dine.jpg";
+import girl from "../assets/girl.jpg";
+import duck from "../assets/duck.jpg";
 import Slides from "../components/Slides";
 
 const EventsPage = () => {
@@ -113,15 +115,69 @@ const EventsPage = () => {
 
       {/* Past Events List */}
       <section className=" w-full h-full mx-auto p-6">
-        <h2 className="text-2xl text-center  font-semibold mb-4">
-          Past Events
-        </h2>
-        {pastEvents.map((event, index) => (
-          <div key={event.id} style={{ marginBottom: "40px" }}>
-            <h3>{event.title}</h3>
-            <Slides images={[event.image]} />
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center mb-6">Past Events</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* Event Card 1 */}
+            <div className="rounded overflow-hidden shadow-lg">
+              <img
+                src={roses}
+                alt="Night of Roses"
+                className="w-full h-64 object-cover"
+              />
+              <div className="px-4 py-2">
+                <h3 className="font-semibold text-gray-700">Night of Roses</h3>
+              </div>
+            </div>
+
+            {/* Event Card 2 */}
+            <div className="rounded overflow-hidden shadow-lg">
+              <img
+                src={dine}
+                alt="Night of Elegance"
+                className="w-full h-64 object-cover"
+              />
+              <div className="px-4 py-2">
+                <h3 className="font-semibold text-gray-700">
+                  Night of Elegance
+                </h3>
+              </div>
+            </div>
+
+            {/* More cards... */}
           </div>
-        ))}
+        </div>
+        {/* <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                src={roses}
+                alt="Night of Roses event"
+                className="w-full h-64 object-cover"
+              />
+              <div className="px-6 py-4">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                  Night of Roses
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <img
+                src={dine}
+                alt="Night of Roses event"
+                className="w-full h-64 object-cover"
+              />
+              <div className="px-6 py-4">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                  Night of Elegence
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </section>
     </div>
   );
