@@ -126,7 +126,7 @@ const EventsPage = () => {
                 className="w-full h-64 object-cover"
               />
               <div className="px-4 py-2">
-                <h3 className="font-semibold text-gray-700">Night of Roses</h3>
+                <h3 className="font-semibold text-gray-700">Jazz & Roses</h3>
               </div>
             </div>
 
