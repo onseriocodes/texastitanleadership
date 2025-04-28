@@ -22,7 +22,7 @@ const EventsPage = () => {
     location: "Addison, TX",
     description: "Join us for our networking & games night!",
     address: "14655 Midway Rd, Suite A Addison, TX 75001",
-    image: board,
+    image: ttlImage,
   };
 
   // PAST EVENTS
@@ -81,14 +81,14 @@ const EventsPage = () => {
             backgroundImage: `url(${upcomingEvent.image})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
           }}
         ></div>
 
-        <div className="relative z-10 bg-gray-800 rounded-xl px-10 py-4">
+        {/* <div className="relative z-10 bg-gray-800 rounded-xl px-10 py-4">
           <h1 className="text-4xl font-bold mb-2">{upcomingEvent.title}</h1>
           <p className="text-lg ">
-            {/* {upcomingEvent.location} -{" "} */}
+            
             {new Date(upcomingEvent.date).toDateString()}{" "}
             <span className="font-semibold text-lg">{upcomingEvent.times}</span>
           </p>
@@ -110,7 +110,7 @@ const EventsPage = () => {
               Thank you for coming!
             </div>
           )}
-        </div>
+        </div> */}
       </div>
 
       {/* Past Events List */}
